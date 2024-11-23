@@ -8,6 +8,16 @@
   ],
   "routes": [
     {
+      "src": "/send_to_sheet",
+      "methods": ["POST"],
+      "dest": "index.py"
+    },
+    {
+      "src": "/",
+      "methods": ["GET"],
+      "dest": "index.py"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.py"
     }
